@@ -1,3 +1,6 @@
+# Deploy on Vercel
+[airplane-seating-algoritm](https://airplane-seating-algoritm.vercel.app/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
