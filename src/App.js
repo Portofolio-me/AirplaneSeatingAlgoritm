@@ -142,7 +142,7 @@ function App() {
           <form className=" ">
             <div className="mb-3">
               <label className="form-label" htmlFor="inputseat">
-                Jumlah seat
+                Input seat
               </label>
               <input
                 // type="text"
@@ -154,7 +154,7 @@ function App() {
             </div>
             <div className="mb-3">
               <label className="form-label" htmlFor="inputseat">
-                Jumlah penumpang
+                Passengers
               </label>
               <input
                 // type="text"
@@ -169,7 +169,7 @@ function App() {
               class="btn btn-primary w-100"
               onClick={(e) => onHandleSubmit(e)}
             >
-              Primary
+              Submit
             </button>
           </form>
         </div>
@@ -200,9 +200,7 @@ function App() {
                       <div
                         key={"seat" + seatIndex}
                         className="bg-success p-2 seat border border-light text-center"
-                      >
-                        
-                      </div>
+                      ></div>
                     );
                   }
                   return (
@@ -217,6 +215,16 @@ function App() {
           })
         )}
       </div>
+      {seat ? (
+        <>
+          <div className="d-flex justify-content-center align-items-center">
+            <div className="bg-success p-2 seat border border-light text-center"></div>
+            <p className="p-3 fs-5">: Available</p>
+          </div>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 }
